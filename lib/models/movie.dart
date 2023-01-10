@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Movie {
-  final String name;
-  final String imageUrl;
-  final String description;
+  final String title;
+  final String subTitle;
+  final String imgUrl;
   final String rating;
+  final List<String> genres;
 
   const Movie({
-    required this.name,
-    required this.imageUrl,
-    required this.description,
+    required this.title,
+    required this.imgUrl,
     required this.rating,
+    required this.genres,
+    required this.subTitle,
   });
 }

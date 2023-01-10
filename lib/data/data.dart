@@ -1,40 +1,39 @@
-import 'package:flutter/material.dart';
 import '../models/movie.dart';
 
 const List<Movie> movies = [
   Movie(
-    name: 'The Crown',
-    imageUrl: 'assets/images/crown.jpg',
-    description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.',
+    title: 'The Crown',
+    subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgUrl: 'assets/images/crown.jpg',
     rating: '9.0',
+    genres: ['Drama', 'Prose'],
   ),
   Movie(
-    name: 'The Umbrella Academy',
-    imageUrl: 'assets/images/umbrella_academy.jpg',
+    title: 'The Umbrella Academy',
+    subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgUrl: 'assets/images/umbrella_academy.jpg',
     rating: '5.0',
-    description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.',
+    genres: ['Prose', 'Poetry'],
   ),
   Movie(
-    name: 'Carole and Tuesday',
-    imageUrl: 'assets/images/carole_and_tuesday',
+    title: 'Carole and Tuesday',
+    subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgUrl: 'assets/images/carole_and_tuesday.jpg',
     rating: '2.0',
-    description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.',
+    genres: ['Drama', 'Poetry'],
   ),
   Movie(
-    name: 'Violet Evergarden',
-    imageUrl: 'assets/images/violet_evergarden.jpg',
-    description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.',
+    title: 'Violet Evergarden',
+    subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgUrl: 'assets/images/violet_evergarden.jpg',
     rating: '3.0',
+    genres: ['Poetry', 'Prose'],
   ),
   Movie(
-    name: 'Stranger Things',
-    imageUrl: 'assets/images/stranger_things',
+    title: 'Stranger Things',
+    subTitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgUrl: 'assets/images/stranger_things.jpg',
     rating: '6.0',
-    description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.',
+    genres: ['Drama', 'Poetry'],
   ),
 ];
