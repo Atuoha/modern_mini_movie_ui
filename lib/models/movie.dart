@@ -4,7 +4,7 @@ class Movie {
   final String title;
   final String subTitle;
   final String imgUrl;
-  final String rating;
+  final int rating;
   final List<String> genres;
 
   const Movie({

@@ -12,9 +12,9 @@ class MovieCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Card(
-        elevation: 3,
-        shape: const RoundedRectangleBorder(
+      child: Container(
+        decoration: const BoxDecoration(
+          color:Colors.white,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(30),
             topRight: Radius.circular(30),
@@ -83,29 +83,43 @@ class MovieCard extends StatelessWidget {
   // for rating row
   Row ratingRow() {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          movie.rating,
+          movie.rating.toStringAsFixed(1),
           style: const TextStyle(
             fontWeight: FontWeight.w700,
           ),
         ),
-        ratingStar()
+        const SizedBox(width: 20),
+        ...ratedStars(),
+        ...notRatedStars(),
       ],
     );
   }
 
-  // for rating star
-  Wrap ratingStar() {
-    return Wrap(
-      children: const [
-        Icon(Icons.star, color: Colors.orange, size: 18),
-        Icon(Icons.star, color: Colors.orange, size: 18),
-        Icon(Icons.star, color: Colors.orange, size: 18),
-        Icon(Icons.star, color: Colors.orange, size: 18),
-        Icon(Icons.star, color: Colors.orange, size: 18),
-      ],
+  // shows stars based on number of rating
+  List<Widget> ratedStars() {
+    return List.generate(
+      movie.rating,
+      (index) => const Icon(
+        Icons.star,
+        color: Colors.orange,
+        size: 18,
+      ),
+    );
+  }
+
+  // shows stars based on 5 minus number of rating (the left from the rating out of 5)
+  List<Widget> notRatedStars() {
+    return List.generate(
+      5 - movie.rating,
+      (index) => const Icon(
+        Icons.star,
+        color: Colors.grey,
+        size: 18,
+      ),
     );
   }
 
