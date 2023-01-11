@@ -26,7 +26,7 @@ class BackgroundContainer extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                stops: const [0.15, 0.90],
+                stops: const [0.15, 0.76],
                 colors: [
                   Colors.white.withOpacity(0.0001),
                   Colors.white,

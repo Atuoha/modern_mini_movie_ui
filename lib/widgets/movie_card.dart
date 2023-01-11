@@ -11,7 +11,7 @@ class MovieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(2.0),
       child: Container(
         decoration: const BoxDecoration(
           color:Colors.white,
@@ -25,7 +25,7 @@ class MovieCard extends StatelessWidget {
           child: Column(
             children: [
               buildImage(),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               Text(
                 movie.title,
                 textAlign: TextAlign.center,
@@ -34,14 +34,16 @@ class MovieCard extends StatelessWidget {
                   fontSize: 17,
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               Text(
                 movie.subTitle,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               genreContainer(),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               ratingRow()
             ],
           ),
